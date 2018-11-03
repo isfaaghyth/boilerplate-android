@@ -6,9 +6,18 @@ object Global {
     }
     object Directory {
         val ANDROID_INIT = "/app/src/main/java"
+        val TEMPLATE = "/src/template/"
     }
     object Key {
         val DIRECTORY = "directory"
         val PACKAGE = "package"
+    }
+    object Template {
+        val FRAGMENT = "fragment.template"
+        val ACTIVITY = "activity.template"
+    }
+    object Ext {
+        val Kt = ".kt"
+        val Java = ".java"
     }
 }

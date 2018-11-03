@@ -4,7 +4,7 @@ import util.Global
 import java.io.File
 
 class Initializer {
-    private fun currentDir(): String {
+    fun currentDir(): String {
         return System.getProperty(Global.System.DIR_PROPERTY)
     }
 
