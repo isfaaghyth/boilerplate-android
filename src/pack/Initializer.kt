@@ -1,18 +1,20 @@
 package pack
 
 import util.Global
+import java.io.File
 
 class Initializer {
-    fun currentDir(): String {
+    private fun currentDir(): String {
         return System.getProperty(Global.System.DIR_PROPERTY)
     }
 
-    fun packageNamePrepared(packageName: String) {
+    fun packageNamePrepared(packageName: String): Boolean {
         val packages = packageName.split(".")
-        var temp = "${currentDir()}${Global.Directory.ANDROID_INIT}"
+        var projectDir = "${currentDir()}${Global.Directory.ANDROID_INIT}"
         for (test in packages) {
-            temp = "$temp/$test"
+            projectDir = "$projectDir/$test"
         }
-        println(temp)
+        val projects = File(projectDir)
+        return projects.exists() && projects.isDirectory
     }
 }
