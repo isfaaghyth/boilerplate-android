@@ -17,11 +17,16 @@ class Initializer {
         return projectDir
     }
 
-    fun packageDirectory(packageName: String) {
-        println(packageNamePrepared(packageName))
-        val test = File(packageNamePrepared(packageName))
+    fun packageDirectory(packageName: String, newPackage: String): HashMap<String, String> {
+        val packageTemp = HashMap<String, String>()
+        val packageInit = "${packageNamePrepared(packageName)}/$newPackage/"
+        val packagesName = "$packageName.$newPackage"
+        val test = File(packageInit)
         if (!test.exists()) {
             test.mkdirs()
         }
+        packageTemp.put(Global.Key.DIRECTORY, packageInit)
+        packageTemp.put(Global.Key.PACKAGE, packagesName)
+        return packageTemp
     }
 }

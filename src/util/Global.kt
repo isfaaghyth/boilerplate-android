@@ -7,4 +7,8 @@ object Global {
     object Directory {
         val ANDROID_INIT = "/app/src/main/java"
     }
+    object Key {
+        val DIRECTORY = "directory"
+        val PACKAGE = "package"
+    }
 }
