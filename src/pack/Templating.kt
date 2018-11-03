@@ -11,15 +11,18 @@ class Templating(private val fileName: String) {
     }
 
     fun create(initial: HashMap<String, String>, extension: String) {
-        val packageName = initial[Global.Key.PACKAGE].toString()
+        val packageName = initial[Global.Key.ROOT_PACKAGE].toString()
+        val fullPackage = initial[Global.Key.PACKAGE].toString()
         val projectDirectory = initial[Global.Key.DIRECTORY].toString()
 
         val newFile = File("$projectDirectory$fileName$extension")
 
         val fragmentTemplate = File(getTemplate(Global.Template.FRAGMENT))
         var temporary = fragmentTemplate.readText()
-        temporary = temporary.replace("~CLASS", fileName)
-        temporary = temporary.replace("~PACKAGE", packageName)
+        temporary = temporary.replace("~CLASS", fileName).trim()
+        temporary = temporary.replace("~ROOT_PACKAGE", packageName).trim()
+        temporary = temporary.replace("~PACKAGE", fullPackage).trim()
+        temporary = temporary.replace("~TIME", Util.getTimeNow()).trim()
         println(temporary)
 
         newFile.writeText(temporary)

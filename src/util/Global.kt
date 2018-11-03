@@ -9,6 +9,7 @@ object Global {
         val TEMPLATE = "/src/template/"
     }
     object Key {
+        val ROOT_PACKAGE = "root_package"
         val DIRECTORY = "directory"
         val PACKAGE = "package"
     }

@@ -18,13 +18,14 @@ class Initializer(val packageName: String) {
     fun packageDirectory(newPackage: String): HashMap<String, String> {
         val temp = HashMap<String, String>()
         val packageInit = "${packageNamePrepared()}/$newPackage/"
-        val packagesName = "$packageName.$newPackage"
+        val fullPackage = "$packageName.$newPackage"
         val test = File(packageInit)
         if (!test.exists()) {
             test.mkdirs()
         }
         temp.put(Global.Key.DIRECTORY, packageInit)
-        temp.put(Global.Key.PACKAGE, packagesName)
+        temp.put(Global.Key.ROOT_PACKAGE, packageName)
+        temp.put(Global.Key.PACKAGE, fullPackage)
         return temp
     }
 }
