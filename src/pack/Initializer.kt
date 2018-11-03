@@ -1,32 +1,30 @@
 package pack
 
 import util.Global
+import util.Util
 import java.io.File
 
-class Initializer {
-    fun currentDir(): String {
-        return System.getProperty(Global.System.DIR_PROPERTY)
-    }
+class Initializer(val packageName: String) {
 
-    private fun packageNamePrepared(packageName: String): String {
+    private fun packageNamePrepared(): String {
+        // project/path/location/app/src/main/java
+        var projectLocation = "${Util.currentDir}${Global.Directory.ANDROID_INIT}"
+
         val packages = packageName.split(".")
-        var projectDir = "${currentDir()}${Global.Directory.ANDROID_INIT}"
-        for (test in packages) {
-            projectDir = "$projectDir/$test"
-        }
-        return projectDir
+        for (domain in packages) projectLocation = "$projectLocation/$domain"
+        return projectLocation
     }
 
-    fun packageDirectory(packageName: String, newPackage: String): HashMap<String, String> {
-        val packageTemp = HashMap<String, String>()
-        val packageInit = "${packageNamePrepared(packageName)}/$newPackage/"
+    fun packageDirectory(newPackage: String): HashMap<String, String> {
+        val temp = HashMap<String, String>()
+        val packageInit = "${packageNamePrepared()}/$newPackage/"
         val packagesName = "$packageName.$newPackage"
         val test = File(packageInit)
         if (!test.exists()) {
             test.mkdirs()
         }
-        packageTemp.put(Global.Key.DIRECTORY, packageInit)
-        packageTemp.put(Global.Key.PACKAGE, packagesName)
-        return packageTemp
+        temp.put(Global.Key.DIRECTORY, packageInit)
+        temp.put(Global.Key.PACKAGE, packagesName)
+        return temp
     }
 }

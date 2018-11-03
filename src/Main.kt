@@ -3,10 +3,7 @@ import pack.Templating
 import util.Global
 
 fun main(args: Array<String>) {
-    val init = Initializer()
-    val dir = init.packageDirectory(
-            "isfahani.ghiyath.ganteng",
-            "login")
-
+    val init = Initializer("isfahani.ghiyath.ganteng")
+    val dir = init.packageDirectory("login")
     Templating("LoginFragment").create(dir, Global.Ext.Kt)
 }
