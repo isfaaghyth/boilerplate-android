@@ -13,7 +13,7 @@ object Global {
         val DIR_PROPERTY = "user.dir"
     }
     object Directory {
-        val TEMPLATE = "/src/${Util.projectPackage(PACKAGE_NAME)}/template/"
+        val TEMPLATE = "/template/"
 
         val ANDROID_PROJECT = "/app/src/main/java"
         val ANDROID_RES = "/app/src/res/layout/"

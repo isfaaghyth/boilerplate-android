@@ -118,7 +118,7 @@
   <!-- Modules -->
   
   
-  <!-- Module Utildroid -->
+  <!-- Module Main -->
   
   <dirname property="module.utildroid.basedir" file="${ant.file}"/>
   

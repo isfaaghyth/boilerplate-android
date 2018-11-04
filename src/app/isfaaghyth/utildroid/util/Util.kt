@@ -1,5 +1,8 @@
 package app.isfaaghyth.utildroid.util
 
+import app.isfaaghyth.utildroid.Main
+import java.io.InputStream
+import java.net.URI
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -20,8 +23,8 @@ object Util {
         return tmpLayoutName.substring(0, tmpLayoutName.length - 1)
     }
 
-    fun getTemplate(type: String): String {
-        return "$currentDir${Global.Directory.TEMPLATE}$type"
+    fun getTemplate(type: String): InputStream {
+        return Main().javaClass.getResourceAsStream("/$type")
     }
 
     fun projectPackage(packageName: String): String {

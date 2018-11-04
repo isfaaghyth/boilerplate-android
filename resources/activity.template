@@ -1,14 +1,8 @@
 package ~PACKAGE
 
-import android.view.View
 import ~ROOT_PACKAGE.R
-import ~ROOT_PACKAGE.base.BaseFragment
 
-/**
- * Created by isfaaghyth on ~TIME.
- * github: @isfaaghyth
- */
-class ~CLASS: BaseFragment<~CLASSPresenter>(), ~CLASSView {
+class ~CLASSActivity : BaseActivity<~CLASSPresenter>(), ~CLASSView {
 
     override fun presenter(): ~CLASSPresenter = ~CLASSPresenter(this)
     override fun contentView(): Int = R.layout.~LAYOUT

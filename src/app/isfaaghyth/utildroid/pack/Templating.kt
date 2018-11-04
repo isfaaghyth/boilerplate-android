@@ -18,8 +18,7 @@ class Templating(packager: HashMap<String, String>,
     init { fileName += prefix }
 
     private fun generator(templateFile: String): String {
-        val file = File(Util.getTemplate(templateFile))
-        var template = file.readText()
+        var template = Util.getTemplate(templateFile).bufferedReader().use { it.readText() }
 
         val replace = mapOf(
                 "~CLASS" to fileName,
@@ -48,10 +47,10 @@ class Templating(packager: HashMap<String, String>,
 
     fun layout(): Templating {
         val layoutDirectory = Util.currentDir.plus(Global.Directory.ANDROID_RES)
-        val template = File(Util.getTemplate(Global.Template.LAYOUT))
+        val template = Util.getTemplate(Global.Template.LAYOUT).bufferedReader().use { it.readText() }
         val xmlFile = layoutDirectory.plus(layoutName).plus(Global.Ext.Xml)
         val layout = File(xmlFile)
-        layout.writeText(template.readText())
+        layout.writeText(template)
         println("[DONE] XML Layout -> $xmlFile")
         return this
     }

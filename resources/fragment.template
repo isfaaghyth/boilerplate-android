@@ -13,7 +13,7 @@ class ~CLASS: BaseFragment<~CLASSPresenter>(), ~CLASSView {
     override fun presenter(): ~CLASSPresenter = ~CLASSPresenter(this)
     override fun contentView(): Int = R.layout.~LAYOUT
 
-    override fun onCreated() {
+    override fun onCreated(view: View) {
 
     }
 
