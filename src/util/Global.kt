@@ -20,9 +20,10 @@ object Global {
     object Ext {
         val Kt = ".kt"
         val Java = ".java"
+        val Xml = ".xml"
     }
     object Type {
-        val fragment = "Fragment"
-        val activity = "Activity"
+        val FRAGMENT = "Fragment"
+        val ACTIVITY = "Activity"
     }
 }

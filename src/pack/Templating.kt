@@ -4,27 +4,25 @@ import util.Global
 import util.Util
 import java.io.File
 
-class Templating(private val fileName: String) {
+class Templating(packager: HashMap<String, String>,
+                 private val fileName: String,
+                 private val extension: String) {
 
-    private fun getTemplate(type: String): String {
-        return "${Util.currentDir}${Global.Directory.TEMPLATE}$type"
-    }
+    private val packageName = packager[Global.Key.ROOT_PACKAGE].toString()
+    private val fullPackage = packager[Global.Key.PACKAGE].toString()
+    private val projectDir  = packager[Global.Key.DIRECTORY].toString()
 
-    fun create(initial: HashMap<String, String>, extension: String) {
-        val packageName = initial[Global.Key.ROOT_PACKAGE].toString()
-        val fullPackage = initial[Global.Key.PACKAGE].toString()
-        val projectDirectory = initial[Global.Key.DIRECTORY].toString()
+    private val newFile = File("$projectDir$fileName$extension")
 
-        val newFile = File("$projectDirectory$fileName$extension")
+    fun create(type: String) {
+        val template = File(Util.getTemplate(type))
 
-        val fragmentTemplate = File(getTemplate(Global.Template.FRAGMENT))
-        var temporary = fragmentTemplate.readText()
+        var temporary = template.readText()
         temporary = temporary.replace("~CLASS", fileName).trim()
         temporary = temporary.replace("~ROOT_PACKAGE", packageName).trim()
         temporary = temporary.replace("~PACKAGE", fullPackage).trim()
         temporary = temporary.replace("~TIME", Util.getTimeNow()).trim()
         temporary = temporary.replace("~LAYOUT", fileName).trim()
-        println(temporary)
 
         newFile.writeText(temporary)
     }

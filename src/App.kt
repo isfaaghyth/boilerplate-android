@@ -5,9 +5,14 @@ import util.Global
 class App(val packageName: String, val fileName: String) {
 
     fun generate(type: String) {
-        val init = Initializer(packageName)
-        val dir = init.packageDirectory(fileName.toLowerCase())
-        Templating(fileName.capitalize() + type).create(dir, Global.Ext.Kt)
+        val initializer = Initializer(packageName)
+        val packager = initializer.packagePrepared(fileName.toLowerCase())
+
+        Templating(
+                packager = packager,
+                fileName = fileName.capitalize() + type,
+                extension = Global.Ext.Kt
+        ).create(Global.Template.FRAGMENT)
     }
 
 }

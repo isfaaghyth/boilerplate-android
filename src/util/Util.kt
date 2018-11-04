@@ -19,4 +19,8 @@ object Util {
         }
         return tmpLayoutName.substring(0, tmpLayoutName.length - 1)
     }
+
+    fun getTemplate(type: String): String {
+        return "${Util.currentDir}${Global.Directory.TEMPLATE}$type"
+    }
 }

@@ -6,7 +6,7 @@ import java.io.File
 
 class Initializer(val packageName: String) {
 
-    private fun packageNamePrepared(): String {
+    private fun projectPackage(): String {
         // project/path/location/app/src/main/java
         var projectLocation = "${Util.currentDir}${Global.Directory.ANDROID_INIT}"
 
@@ -15,9 +15,9 @@ class Initializer(val packageName: String) {
         return projectLocation
     }
 
-    fun packageDirectory(newPackage: String): HashMap<String, String> {
+    fun packagePrepared(newPackage: String): HashMap<String, String> {
         val temp = HashMap<String, String>()
-        val packageInit = "${packageNamePrepared()}/$newPackage/"
+        val packageInit = "${projectPackage()}/$newPackage/"
         val fullPackage = "$packageName.$newPackage"
         val test = File(packageInit)
         if (!test.exists()) {
