@@ -1,0 +1,10 @@
+package ~PACKAGE.ui.main.fragment.home
+
+import ~PACKAGE.base.BaseView
+
+/**
+ * Created by isfaaghyth on ~TIME.
+ * github: @isfaaghyth
+ */
+interface ~CLASS View: BaseView {
+}

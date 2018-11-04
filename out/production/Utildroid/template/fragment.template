@@ -1,5 +1,19 @@
 package ~PACKAGE
 
-class ~CLASS: Fragment {
-    fun test(): String = "Hai beb"
+import android.view.View
+import ~ROOT_PACKAGE.R
+import ~ROOT_PACKAGE.base.BaseFragment
+
+/**
+ * Created by isfaaghyth on ~TIME.
+ * github: @isfaaghyth
+ */
+class ~CLASS: BaseFragment<~CLASS Presenter>(), ~CLASS View {
+
+    override fun presenter(): ~CLASS Presenter = ~CLASS Presenter(this)
+    override fun contentView(): Int = R.layout.~LAYOUT
+
+    override fun onCreated() {
+
+    }
 }

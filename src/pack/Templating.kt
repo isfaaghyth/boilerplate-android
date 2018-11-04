@@ -23,6 +23,7 @@ class Templating(private val fileName: String) {
         temporary = temporary.replace("~ROOT_PACKAGE", packageName).trim()
         temporary = temporary.replace("~PACKAGE", fullPackage).trim()
         temporary = temporary.replace("~TIME", Util.getTimeNow()).trim()
+        temporary = temporary.replace("~LAYOUT", fileName).trim()
         println(temporary)
 
         newFile.writeText(temporary)

@@ -21,4 +21,8 @@ object Global {
         val Kt = ".kt"
         val Java = ".java"
     }
+    object Type {
+        val fragment = "Fragment"
+        val activity = "Activity"
+    }
 }
