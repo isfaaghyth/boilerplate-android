@@ -5,8 +5,10 @@ object Global {
         val DIR_PROPERTY = "user.dir"
     }
     object Directory {
-        val ANDROID_INIT = "/app/src/main/java"
         val TEMPLATE = "/src/template/"
+
+        val ANDROID_PROJECT = "/app/src/main/java"
+        val ANDROID_RES = "/app/src/res/layout"
     }
     object Key {
         val ROOT_PACKAGE = "root_package"
