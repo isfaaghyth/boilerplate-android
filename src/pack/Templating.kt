@@ -26,4 +26,13 @@ class Templating(packager: HashMap<String, String>,
 
         newFile.writeText(temporary)
     }
+
+    fun layout(): Templating {
+        val layoutDirectory = Util.currentDir + Global.Directory.ANDROID_RES
+        val template = File(Util.getTemplate(Global.Template.LAYOUT))
+        val layoutName = Util.layoutName(fileName)
+        val layout = File("$layoutDirectory$layoutName${Global.Ext.Xml}")
+        layout.writeText(template.readText())
+        return this
+    }
 }

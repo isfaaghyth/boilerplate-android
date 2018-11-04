@@ -8,7 +8,7 @@ object Global {
         val TEMPLATE = "/src/template/"
 
         val ANDROID_PROJECT = "/app/src/main/java"
-        val ANDROID_RES = "/app/src/res/layout"
+        val ANDROID_RES = "/app/src/res/layout/"
     }
     object Key {
         val ROOT_PACKAGE = "root_package"
@@ -18,6 +18,7 @@ object Global {
     object Template {
         val FRAGMENT = "fragment.template"
         val ACTIVITY = "activity.template"
+        val LAYOUT = "layout.template"
     }
     object Ext {
         val Kt = ".kt"
