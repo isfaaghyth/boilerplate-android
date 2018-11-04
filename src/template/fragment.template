@@ -8,12 +8,13 @@ import ~ROOT_PACKAGE.base.BaseFragment
  * Created by isfaaghyth on ~TIME.
  * github: @isfaaghyth
  */
-class ~CLASS: BaseFragment<~CLASS Presenter>(), ~CLASS View {
+class ~CLASS: BaseFragment<~CLASSPresenter>(), ~CLASSView {
 
-    override fun presenter(): ~CLASS Presenter = ~CLASS Presenter(this)
+    override fun presenter(): ~CLASSPresenter = ~CLASSPresenter(this)
     override fun contentView(): Int = R.layout.~LAYOUT
 
     override fun onCreated() {
 
     }
+
 }

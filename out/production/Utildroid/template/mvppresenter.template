@@ -1,0 +1,13 @@
+package ~PACKAGE
+
+import ~ROOT_PACKAGE.base.BasePresenter
+
+/**
+ * Created by isfaaghyth on ~TIME.
+ * github: @isfaaghyth
+ */
+class ~CLASSPresenter(private val view: ~CLASSView): BasePresenter<~CLASSView>() {
+
+    init { super.attachView(view) }
+
+}

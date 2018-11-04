@@ -6,5 +6,5 @@ import ~PACKAGE.base.BaseView
  * Created by isfaaghyth on ~TIME.
  * github: @isfaaghyth
  */
-interface ~CLASS View: BaseView {
+interface ~CLASSView: BaseView {
 }

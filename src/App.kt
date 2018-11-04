@@ -7,13 +7,15 @@ class App(val packageName: String, val fileName: String) {
     private val initializer = Initializer(packageName)
     private val packager = initializer.packagePrepared(fileName.toLowerCase())
 
-    fun generate(type: String) {
+    fun generate() {
         Templating(
                 packager = packager,
-                fileName = fileName.capitalize() + type,
-                extension = Global.Ext.Kt)
+                fileName = fileName.capitalize(),
+                extension = Global.Ext.Kt,
+                prefix = Global.Prefix.FRAGMENT)
+                .mvp()
                 .layout()
-                .create(Global.Template.FRAGMENT)
+                .create()
     }
 
 }

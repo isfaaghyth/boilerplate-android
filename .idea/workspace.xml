@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28aa9fd9-b98f-4b2e-9025-ffc435e1b86f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pack/Template.kt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/template/mvppresenter.template" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/App.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/App.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/MainKt.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/MainKt.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/pack/Directory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/pack/Initializer.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/pack/Initializer.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/pack/Templating.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/pack/Templating.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/template/fragment.template" afterPath="$PROJECT_DIR$/out/production/Utildroid/template/fragment.template" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/template/fragmentview.template" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Directory.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Directory.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Ext.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Ext.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Key.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Key.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$System.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global$System.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Template.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Template.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global$Type.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/util/Global.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/util/Global.class" />
       <change beforePath="$PROJECT_DIR$/src/App.kt" afterPath="$PROJECT_DIR$/src/App.kt" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" afterPath="$PROJECT_DIR$/src/Main.kt" />
-      <change beforePath="$PROJECT_DIR$/src/pack/Initializer.kt" afterPath="$PROJECT_DIR$/src/pack/Initializer.kt" />
+      <change beforePath="$PROJECT_DIR$/src/pack/Directory.kt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/pack/Templating.kt" afterPath="$PROJECT_DIR$/src/pack/Templating.kt" />
+      <change beforePath="$PROJECT_DIR$/src/template/fragment.template" afterPath="$PROJECT_DIR$/src/template/fragment.template" />
+      <change beforePath="$PROJECT_DIR$/src/template/fragmentview.template" afterPath="$PROJECT_DIR$/src/template/mvpview.template" />
       <change beforePath="$PROJECT_DIR$/src/util/Global.kt" afterPath="$PROJECT_DIR$/src/util/Global.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,21 +43,11 @@
       <file leaf-file-name="Initializer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pack/Initializer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="120">
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="e#14#69#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Directory.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pack/Directory.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -47,8 +55,8 @@
       <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="225">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -56,33 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/Util.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-              <folding>
-                <element signature="e#14#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/layout.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Templating.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pack/Templating.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="346">
+              <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
               <folding>
                 <element signature="e#14#69#0" expanded="true" />
               </folding>
@@ -90,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Global.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/Global.kt">
+      <file leaf-file-name="Template.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pack/Template.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvppresenter.template" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/template/mvppresenter.template">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -103,28 +99,18 @@
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+            <state relative-caret-position="45">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/fragment.template">
+      <file leaf-file-name="Global.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/Global.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragmentview.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/template/fragmentview.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -136,9 +122,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -165,16 +151,19 @@
         <option value="$PROJECT_DIR$/app/src/main/java/isfahani/ghiyath/ganteng/login/LoginFragment.kt" />
         <option value="$PROJECT_DIR$/src/template/Fragment.template" />
         <option value="$PROJECT_DIR$/src/template/Fragment.kt" />
-        <option value="$PROJECT_DIR$/src/template/fragment.template" />
-        <option value="$PROJECT_DIR$/src/template/fragmentview.template" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/isfa/loginfragment/LoginFragment.kt" />
         <option value="$PROJECT_DIR$/src/util/Util.kt" />
         <option value="$PROJECT_DIR$/src/template/layout.template" />
         <option value="$PROJECT_DIR$/src/pack/Directory.kt" />
+        <option value="$PROJECT_DIR$/app/src/res/layout/fragment_login.xml" />
+        <option value="$PROJECT_DIR$/src/pack/Initializer.kt" />
+        <option value="$PROJECT_DIR$/src/template/fragment.template" />
+        <option value="$PROJECT_DIR$/src/template/fragmentview.template" />
+        <option value="$PROJECT_DIR$/src/template/fragmentpresenter.template" />
         <option value="$PROJECT_DIR$/src/Main.kt" />
         <option value="$PROJECT_DIR$/src/util/Global.kt" />
+        <option value="$PROJECT_DIR$/src/pack/Template.kt" />
         <option value="$PROJECT_DIR$/src/App.kt" />
-        <option value="$PROJECT_DIR$/src/pack/Initializer.kt" />
         <option value="$PROJECT_DIR$/src/pack/Templating.kt" />
       </list>
     </option>
@@ -210,51 +199,6 @@
             <path>
               <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
               <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Utildroid" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="isfa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Utildroid" type="b2602c69:ProjectViewProjectNode" />
@@ -454,7 +398,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2890625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3734375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -512,7 +456,7 @@
         <state relative-caret-position="240">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <element signature="e#14#86#0" expanded="true" />
+            <element signature="e#14#86#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/fragmentview.template">
+    <entry file="file://$PROJECT_DIR$/src/template/mvpview.template">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
@@ -584,7 +528,7 @@
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#14#86#0" expanded="true" />
+            <element signature="e#14#86#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +582,7 @@
         <state relative-caret-position="45">
           <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <element signature="e#14#86#0" expanded="true" />
+            <element signature="e#14#86#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -688,23 +632,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/isfahani/ghiyath/ganteng/login/LoginFragment.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/login/Login.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/loginfragment/LoginFragment.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/login/LoginFragment.kt" />
-    <entry file="file://$PROJECT_DIR$/src/template/fragmentview.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/template/fragment.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/template/layout.template">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -715,29 +642,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/Util.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        <state relative-caret-position="104">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
-            <element signature="e#14#86#0" expanded="true" />
+            <element signature="e#14#86#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/fragment.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/mvpview.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/res/layout/fragment_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,28 +690,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Global.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pack/Initializer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="e#14#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pack/Template.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Global.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/template/mvppresenter.template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/login/LoginFragmentPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/login/LoginFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/isfa/login/LoginFragmentView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pack/Templating.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="346">
+          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
           <folding>
             <element signature="e#14#69#0" expanded="true" />
           </folding>
