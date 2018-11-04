@@ -21,7 +21,7 @@ object Util {
     }
 
     fun getTemplate(type: String): String {
-        return "${currentDir}${Global.Directory.TEMPLATE}$type"
+        return "$currentDir${Global.Directory.TEMPLATE}$type"
     }
 
     fun projectPackage(packageName: String): String {

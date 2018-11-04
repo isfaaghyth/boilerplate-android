@@ -7,9 +7,11 @@ import java.io.File
 class Initializer(val packageName: String) {
 
     private fun projectPackage(): String {
-        var projectLocation = "${Util.currentDir}${Global.Directory.ANDROID_PROJECT}"
+        var projectLocation = Util.currentDir.plus(Global.Directory.ANDROID_PROJECT)
         val packages = packageName.split(".")
-        for (domain in packages) projectLocation = "$projectLocation/$domain"
+        for (domain in packages) {
+            projectLocation = projectLocation.plus("/").plus(domain)
+        }
         return projectLocation
     }
 
