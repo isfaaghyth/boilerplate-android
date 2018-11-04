@@ -8,6 +8,7 @@ class Initializer(val packageName: String) {
 
     private fun projectPackage(): String {
         var projectLocation = Util.currentDir.plus(Global.Directory.ANDROID_PROJECT)
+        println(projectLocation)
         val packages = packageName.split(".")
         for (domain in packages) {
             projectLocation = projectLocation.plus("/").plus(domain)
@@ -18,14 +19,16 @@ class Initializer(val packageName: String) {
     fun packagePrepared(newPackage: String): HashMap<String, String> {
         val packageCollection = HashMap<String, String>()
 
-        val packageInit = "${projectPackage()}/$newPackage/"
+        val packageInit = projectPackage().plus("/").plus(newPackage)
         val isProjectDir = File(packageInit)
-        val isLayoutDir = File("${Util.currentDir}/${Global.Directory.ANDROID_RES}/")
+
+        val isLayoutDir = File(Util.currentDir.plus("/")
+                .plus(Global.Directory.ANDROID_RES).plus("/"))
 
         if (!isLayoutDir.exists()) isLayoutDir.mkdirs()
         if (!isProjectDir.exists()) isProjectDir.mkdirs()
 
-        val fullPackage = "$packageName.$newPackage"
+        val fullPackage = packageName.plus(newPackage)
         packageCollection.put(Global.Key.DIRECTORY, packageInit)
         packageCollection.put(Global.Key.ROOT_PACKAGE, packageName)
         packageCollection.put(Global.Key.PACKAGE, fullPackage)

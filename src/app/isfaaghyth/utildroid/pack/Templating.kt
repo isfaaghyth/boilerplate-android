@@ -30,10 +30,11 @@ class Templating(packager: HashMap<String, String>,
         return temporary
     }
 
-    fun create() {
-        val newFile = File("$projectDir$fileName$extension")
+    fun create(): Templating {
+        val newFile = File(projectDir.plus(fileName).plus(extension))
         newFile.writeText(templateGenerator(Template.templateName(prefix)))
-        println("[DONE] Class -> $fileName$extension")
+        println("[DONE] Class -> $newFile")
+        return this
     }
 
     private fun create(file: File, template: String) {
@@ -41,20 +42,24 @@ class Templating(packager: HashMap<String, String>,
     }
 
     fun layout(): Templating {
-        val layoutDirectory = Util.currentDir + Global.Directory.ANDROID_RES
+        val layoutDirectory = Util.currentDir.plus(Global.Directory.ANDROID_RES)
         val template = File(Util.getTemplate(Global.Template.LAYOUT))
-        val layout = File("$layoutDirectory$layoutName${Global.Ext.Xml}")
+        val xmlFile = layoutDirectory.plus(layoutName).plus(Global.Ext.Xml)
+        val layout = File(xmlFile)
         layout.writeText(template.readText())
-        println("[DONE] XML Layout -> $layoutName")
+        println("[DONE] XML Layout -> $xmlFile")
         return this
     }
 
     fun mvp(): Templating {
-        create(File("$projectDir$fileName${Global.Prefix.VIEW}$extension"), Global.Template.Mvp.View)
-        println("[DONE] MVP View Layout -> $fileName${Global.Prefix.VIEW}$extension")
+        val mvpView = projectDir.plus(fileName).plus(Global.Prefix.VIEW).plus(extension)
+        val mvpPresenter = projectDir.plus(fileName).plus(Global.Prefix.PRESENTER).plus(extension)
 
-        create(File("$projectDir$fileName${Global.Prefix.PRESENTER}$extension"), Global.Template.Mvp.Presenter)
-        println("[DONE] MVP Presenter Layout -> $fileName${Global.Prefix.PRESENTER}$extension")
+        create(File(mvpView), Global.Template.Mvp.View)
+        println("[DONE] MVP View -> $mvpView")
+
+        create(File(mvpPresenter), Global.Template.Mvp.Presenter)
+        println("[DONE] MVP Presenter -> $mvpPresenter")
         return this
     }
 }
