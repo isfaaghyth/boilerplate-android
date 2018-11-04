@@ -1,6 +1,7 @@
 package app.isfaaghyth.utildroid
 
 import app.isfaaghyth.utildroid.pack.Initializer
+import app.isfaaghyth.utildroid.pack.Template
 import app.isfaaghyth.utildroid.pack.Templating
 import app.isfaaghyth.utildroid.util.Global
 
@@ -15,7 +16,7 @@ class App(packageName: String, val fileName: String) {
                 fileName = fileName.capitalize(),
                 extension = Global.Ext.Kt,
                 prefix = classType)
-                .create()
+                .build()
     }
 
 }

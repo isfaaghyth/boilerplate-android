@@ -15,30 +15,35 @@ class Templating(packager: HashMap<String, String>,
 
     private val layoutName = Util.layoutName(fileName + prefix)
 
-    init {
-        fileName += prefix
-    }
+    init { fileName += prefix }
 
-    private fun templateGenerator(type: String): String {
-        val template = File(Util.getTemplate(type))
-        var temporary = template.readText()
-        temporary = temporary.replace("~CLASS", fileName).trim()
-        temporary = temporary.replace("~ROOT_PACKAGE", packageName).trim()
-        temporary = temporary.replace("~PACKAGE", fullPackage).trim()
-        temporary = temporary.replace("~TIME", Util.getTimeNow()).trim()
-        temporary = temporary.replace("~LAYOUT", layoutName).trim()
-        return temporary
-    }
+    private fun generator(templateFile: String): String {
+        val file = File(Util.getTemplate(templateFile))
+        var template = file.readText()
 
-    fun create(): Templating {
-        val newFile = File(projectDir.plus(fileName).plus(extension))
-        newFile.writeText(templateGenerator(Template.templateName(prefix)))
-        println("[DONE] Class -> $newFile")
-        return this
+        val replace = mapOf(
+                "~CLASS" to fileName,
+                "~ROOT_PACKAGE" to packageName,
+                "~PACKAGE" to fullPackage,
+                "~TIME" to Util.getTimeNow(),
+                "~LAYOUT" to layoutName)
+
+        replace.forEach { base, new ->
+            template = template.replace(base, new).trim()
+        }
+
+        return template
     }
 
     private fun create(file: File, template: String) {
-        file.writeText(templateGenerator(template))
+        file.writeText(generator(template))
+        println("[DONE] Class -> $file")
+    }
+
+    fun build(): Templating {
+        val newFile = File(projectDir.plus(fileName).plus(extension))
+        create(newFile, Template.templateName(prefix))
+        return this
     }
 
     fun layout(): Templating {
@@ -54,12 +59,8 @@ class Templating(packager: HashMap<String, String>,
     fun mvp(): Templating {
         val mvpView = projectDir.plus(fileName).plus(Global.Prefix.VIEW).plus(extension)
         val mvpPresenter = projectDir.plus(fileName).plus(Global.Prefix.PRESENTER).plus(extension)
-
         create(File(mvpView), Global.Template.Mvp.View)
-        println("[DONE] MVP View -> $mvpView")
-
         create(File(mvpPresenter), Global.Template.Mvp.Presenter)
-        println("[DONE] MVP Presenter -> $mvpPresenter")
         return this
     }
 }

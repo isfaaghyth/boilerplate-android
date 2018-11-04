@@ -1,7 +1,5 @@
 package app.isfaaghyth.utildroid.util
 
-import app.isfaaghyth.utildroid.pack.Initializer
-
 object Global {
     val PACKAGE_NAME = "app.isfaaghyth.utildroid"
 
