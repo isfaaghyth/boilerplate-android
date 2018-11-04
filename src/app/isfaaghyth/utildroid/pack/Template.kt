@@ -8,6 +8,7 @@ object Template {
         Global.Prefix.FRAGMENT -> "fragment.template"
         Global.Prefix.PRESENTER -> "mvppresenter.template"
         Global.Prefix.VIEW -> "mvpview.template"
+        Global.Prefix.ACTIVITY -> "activity.template"
         else -> ""
     }
 

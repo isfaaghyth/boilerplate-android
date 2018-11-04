@@ -1,0 +1,10 @@
+package ~PACKAGE
+
+import ~ROOT_PACKAGE.base.BaseView
+
+/**
+ * Created by isfaaghyth on ~TIME.
+ * github: @isfaaghyth
+ */
+interface ~CLASSView: BaseView {
+}

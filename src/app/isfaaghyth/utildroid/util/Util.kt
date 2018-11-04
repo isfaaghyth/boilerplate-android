@@ -1,8 +1,6 @@
 package app.isfaaghyth.utildroid.util
 
-import app.isfaaghyth.utildroid.Main
 import java.io.InputStream
-import java.net.URI
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -24,7 +22,7 @@ object Util {
     }
 
     fun getTemplate(type: String): InputStream {
-        return Main().javaClass.getResourceAsStream("/$type")
+        return javaClass.getResourceAsStream("/$type")
     }
 
     fun projectPackage(packageName: String): String {
