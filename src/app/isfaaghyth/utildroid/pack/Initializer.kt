@@ -16,16 +16,30 @@ class Initializer(private val basePackage: String,
     //@example: /project/app/src/main/java/your/package/name/fragment/main/
     private var fullPath: String = ""
 
+    private val INVALID_CODE = 0
+
+    private fun validation(): Boolean =
+            appPackage.contains(".") &&
+            !appPackage.contains("\\s".toRegex())
+
     /**
      * featureIndexOf & featurePackage
      * for preparing to generate a new package based on the name of the base class
      * @example: your/package/name/fragment/main/
      * @result: main
      */
-    private val featureIndexOf = appPackage.lastIndexOf(".")
+    private var featureIndexOf = if (validation()) {
+        appPackage.lastIndexOf(".")
+    } else {
+        INVALID_CODE
+    }
 
     //example: getting "main" from an example above
-    private val featurePackage = appPackage.substring(featureIndexOf + 1)
+    private var featurePackage = if (validation()) {
+        appPackage.substring(featureIndexOf + 1)
+    } else {
+        INVALID_CODE.toString()
+    }
 
     init {
         /**
