@@ -8,6 +8,6 @@ import ~ROOT_PACKAGE.base.BasePresenter
  */
 class ~CLASSPresenter(private val view: ~CLASSView): BasePresenter<~CLASSView>() {
 
-    init { super.attachView(view) }
+    pack { super.attachView(view) }
 
 }

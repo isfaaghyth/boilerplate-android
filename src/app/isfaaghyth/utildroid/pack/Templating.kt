@@ -47,7 +47,7 @@ class Templating(private val packager: Packager,
 
     fun build(): Templating {
         val newFile = File(projectDir.plus(fileName).plus(extension))
-        create(newFile, Template.templateName(prefix))
+        create(newFile, Template.name(prefix))
         return this
     }
 

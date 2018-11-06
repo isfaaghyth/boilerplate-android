@@ -70,8 +70,14 @@ class Initializer(private val basePackage: String,
     private fun isDirectory() {
         val projectPath = File(fullPath)
         val layoutPath = File("$currentPath/${Global.Directory.ANDROID_RES}/")
-        if (!layoutPath.exists()) layoutPath.mkdirs()
-        if (!projectPath.exists()) projectPath.mkdirs()
+        if (!layoutPath.exists()) {
+            //throw Exception("uh no! You entered the wrong package.")
+            layoutPath.mkdirs()
+        }
+        if (!projectPath.exists()) {
+            //throw Exception("uh no! You entered the wrong package.")
+            projectPath.mkdirs()
+        }
     }
 
     /**
@@ -88,8 +94,7 @@ class Initializer(private val basePackage: String,
     }
 
 
-    fun pack(): Packager? {
-        if (!valid()) return null
+    fun pack(): Packager {
         return Packager(
                 basePackage = basePackage,
                 featurePackage = fullPackage,

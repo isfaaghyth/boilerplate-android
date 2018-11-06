@@ -10,7 +10,7 @@ class App(basePackage: String, private val appPackage: String) {
 
     fun generate(classType: String, extension: String): Templating {
         return Templating(
-                packager = packager!!,
+                packager = packager,
                 fileName = appPackage,
                 extension = extension,
                 prefix = classType)
