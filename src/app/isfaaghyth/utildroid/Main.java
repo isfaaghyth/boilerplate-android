@@ -1,7 +1,6 @@
 package app.isfaaghyth.utildroid;
 
 import app.isfaaghyth.utildroid.util.Global;
-import app.isfaaghyth.utildroid.util.Util;
 
 public class Main {
 
@@ -20,7 +19,7 @@ public class Main {
         }
 
         new App(basePackage, appPackage)
-                .generate(option)
+                .generate(option, Global.Ext.INSTANCE.getKt())
                 .mvp()
                 .layout();
     }

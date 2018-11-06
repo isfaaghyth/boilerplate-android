@@ -13,11 +13,11 @@ class App(basePackage: String, private val appPackage: String) {
 
     private val packager = initializer.init()
 
-    fun generate(classType: String): Templating {
+    fun generate(classType: String, extension: String): Templating {
         return Templating(
                 packager = packager,
                 fileName = appPackage,
-                extension = Global.Ext.Kt,
+                extension = extension,
                 prefix = classType)
                 .build()
     }

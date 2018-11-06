@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28aa9fd9-b98f-4b2e-9025-ffc435e1b86f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/isfa/ganteng/banget/ui/fragment/login/LoginFragment.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/isfa/ganteng/banget/ui/fragment/login/LoginFragmentPresenter.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/isfa/ganteng/banget/ui/fragment/login/LoginFragmentView.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/App.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/App.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/entity/Package.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Initializer.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Initializer.class" />
-      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" />
-    </list>
+    <list default="true" id="28aa9fd9-b98f-4b2e-9025-ffc435e1b86f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +23,8 @@
       <file leaf-file-name="Initializer.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="484">
+              <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -653,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="484">
+          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
           <folding />
         </state>
       </provider>

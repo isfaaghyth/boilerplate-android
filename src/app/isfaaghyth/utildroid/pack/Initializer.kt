@@ -1,5 +1,6 @@
 package app.isfaaghyth.utildroid.pack
 
+import app.isfaaghyth.utildroid.entity.Packager
 import app.isfaaghyth.utildroid.util.Global
 import app.isfaaghyth.utildroid.util.Util
 import java.io.File
@@ -18,7 +19,7 @@ class Initializer(private val basePackage: String,
 
     private val INVALID_CODE = 0
 
-    private fun validation(): Boolean =
+    private fun valid(): Boolean =
             appPackage.contains(".") &&
             !appPackage.contains("\\s".toRegex())
 
@@ -28,14 +29,14 @@ class Initializer(private val basePackage: String,
      * @example: your/package/name/fragment/main/
      * @result: main
      */
-    private var featureIndexOf = if (validation()) {
+    private var featureIndexOf = if (valid()) {
         appPackage.lastIndexOf(".")
     } else {
         INVALID_CODE
     }
 
     //example: getting "main" from an example above
-    private var featurePackage = if (validation()) {
+    private var featurePackage = if (valid()) {
         appPackage.substring(featureIndexOf + 1)
     } else {
         INVALID_CODE.toString()
@@ -82,16 +83,13 @@ class Initializer(private val basePackage: String,
         return javaPath
     }
 
-    /**
-     * packagePrepared()
-     * @return: hashMap<> for any initialize requirements
-     * @example:
-     */
-    fun init(): HashMap<String, String> {
-        val initials = HashMap<String, String>()
-        initials.put(Global.Key.ROOT_PACKAGE, basePackage)
-        initials.put(Global.Key.PACKAGE, fullPackage)
-        initials.put(Global.Key.DIRECTORY, fullPath)
-        return initials
+
+    fun init(): Packager? {
+        if (!valid()) return null
+        return Packager(
+                basePackage = basePackage,
+                featurePackage = fullPackage,
+                projectPath = fullPath
+        )
     }
 }
