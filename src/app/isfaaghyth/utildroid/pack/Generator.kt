@@ -5,10 +5,10 @@ import app.isfaaghyth.utildroid.util.Global
 import app.isfaaghyth.utildroid.util.Util
 import java.io.File
 
-class Templating(private val packager: Packager,
-                 private var fileName: String,
-                 private var prefix: String,
-                 private var extension: String) {
+class Generator(private val packager: Packager,
+                private var fileName: String,
+                private var prefix: String,
+                private var extension: String) {
 
     private val packageName = packager.basePackage
     private val fullPackage = packager.featurePackage
@@ -23,15 +23,18 @@ class Templating(private val packager: Packager,
         fileName += prefix
     }
 
-    private fun generator(templateFile: String): String {
-        var template = Util.template(templateFile).bufferedReader().use { it.readText() }
+    private fun generator(file: String): String {
+        var template = Util.template(file).bufferedReader().use {
+            template -> template.readText()
+        }
 
         val replace = mapOf(
                 "~CLASS" to fileName,
                 "~ROOT_PACKAGE" to packageName,
                 "~PACKAGE" to fullPackage,
                 "~TIME" to Util.timeNow(),
-                "~LAYOUT" to layoutName)
+                "~LAYOUT" to layoutName
+        )
 
         replace.forEach { base, new ->
             template = template.replace(base, new).trim()
@@ -45,13 +48,7 @@ class Templating(private val packager: Packager,
         println("[DONE] Class -> $file")
     }
 
-    fun build(): Templating {
-        val newFile = File(projectDir.plus(fileName).plus(extension))
-        create(newFile, Template.name(prefix))
-        return this
-    }
-
-    fun layout(): Templating {
+    fun layout(): Generator {
         val layoutDirectory = Util.currentPath.plus(Global.Directory.ANDROID_RES)
         val template = Util.template(Global.Template.LAYOUT).bufferedReader().use { it.readText() }
         val xmlFile = layoutDirectory.plus(layoutName).plus(Global.Ext.Xml)
@@ -61,11 +58,17 @@ class Templating(private val packager: Packager,
         return this
     }
 
-    fun mvp(): Templating {
+    fun mvp(): Generator {
         val mvpView = projectDir.plus(fileName).plus(Global.Prefix.VIEW).plus(extension)
         val mvpPresenter = projectDir.plus(fileName).plus(Global.Prefix.PRESENTER).plus(extension)
         create(File(mvpView), Global.Template.Mvp.View)
         create(File(mvpPresenter), Global.Template.Mvp.Presenter)
+        return this
+    }
+
+    fun build(): Generator {
+        val newFile = File(projectDir.plus(fileName).plus(extension))
+        create(newFile, Template.name(prefix))
         return this
     }
 
