@@ -11,7 +11,7 @@ class App(basePackage: String, private val appPackage: String) {
     fun generate(classType: String, extension: String): Generator {
         return Generator(
                 packager = packager,
-                fileName = appPackage,
+                appPackage = appPackage,
                 extension = extension,
                 prefix = classType)
                 .build()
