@@ -4,57 +4,80 @@ import app.isfaaghyth.utildroid.util.Global
 import app.isfaaghyth.utildroid.util.Util
 import java.io.File
 
-class Initializer(val packageName: String) {
+class Initializer(private val basePackage: String,
+                  private val appPackage: String) {
 
-    private fun basePackage(p: String): String {
-        var projectLocation = Util.currentDir.plus(Global.Directory.ANDROID_PROJECT)
-        val packages = p.split("\\.".toRegex())
-        for (domain in packages) {
-            projectLocation = projectLocation.plus("/").plus(domain)
+    //current directory
+    private val currentPath = Util.currentPath
+
+    //@example: your.package.name.fragment.main
+    private var fullPackage: String = ""
+
+    //@example: /project/app/src/main/java/your/package/name/fragment/main/
+    private var fullPath: String = ""
+
+    /**
+     * featureIndexOf & featurePackage
+     * for preparing to generate a new package based on the name of the base class
+     * @example: your/package/name/fragment/main/
+     * @result: main
+     */
+    private val featureIndexOf = appPackage.lastIndexOf(".")
+
+    //example: getting "main" from an example above
+    private val featurePackage = appPackage.substring(featureIndexOf + 1)
+
+    init {
+        /**
+         * featureBasePackage is preparing the sub-package for your class
+         * @example: /ui/main/fragment/...
+          */
+        val featureBasePackage = appPackage.substring(0, featureIndexOf)
+        for (appPackage in featureBasePackage.split("\\.".toRegex())) {
+            fullPackage = fullPackage.plus(".").plus(appPackage)
+            fullPath = fullPath.plus("/").plus(appPackage)
         }
-        return projectLocation
+
+        fullPath = "${basePath()}/$fullPath/$featurePackage/"
+        fullPackage = "$basePackage$fullPackage.$featurePackage"
+
+        isDirectory()
     }
 
-    fun packagePrepared(className: String): HashMap<String, String> {
-        val packageCollection = HashMap<String, String>()
-
-        var addNewPackage = ""
-        var addNewPackage1 = ""
-        val index = className.lastIndexOf(".")
-        for (t in className.substring(0, index).split("\\.".toRegex())) {
-            addNewPackage = addNewPackage.plus("/").plus(t)
-            addNewPackage1 = addNewPackage1.plus(".").plus(t)
-        }
-
-        val cn = className.substring(index + 1)
-
-        val path = basePackage(packageName)
-                .plus("/")
-                .plus(addNewPackage).plus("/")
-                .plus(cn)
-                .plus("/")
-
-        val fullPackage = packageName.plus(addNewPackage1).plus(".").plus(cn)
-
-        println(addNewPackage)
-        println(addNewPackage1)
-        println(cn)
-        println(fullPackage)
-
-        val projectPath = File(path)
-
-        val layoutPath = File(Util.currentDir
-                        .plus("/")
-                        .plus(Global.Directory.ANDROID_RES)
-                        .plus("/"))
-
+    /**
+     * isDirectory()
+     * ensure the project directory correctly
+     */
+    private fun isDirectory() {
+        val projectPath = File(fullPath)
+        val layoutPath = File("$currentPath/${Global.Directory.ANDROID_RES}/")
         if (!layoutPath.exists()) layoutPath.mkdirs()
         if (!projectPath.exists()) projectPath.mkdirs()
+    }
 
-        //val rootPackage = packageName.substring(0, packageName.indexOf(packageName.split("\\.".toRegex())[packageName.split("\\.".toRegex()).size-1])-1)
-        packageCollection.put(Global.Key.DIRECTORY, path)
-        packageCollection.put(Global.Key.ROOT_PACKAGE, packageName)
-        packageCollection.put(Global.Key.PACKAGE, fullPackage)
-        return packageCollection
+    /**
+     * basePath()
+     * base location of java files for android projects including project package directory
+     * @example: /path/to/project/app/src/main/java/your/package/name
+     */
+    private fun basePath(): String {
+        var javaPath = currentPath.plus(Global.Directory.ANDROID_PROJECT)
+        for (domain in basePackage.split("\\.".toRegex())) {
+            javaPath = javaPath.plus("/").plus(domain)
+        }
+        return javaPath
+    }
+
+    /**
+     * packagePrepared()
+     * @return: hashMap<> for any initialize requirements
+     * @example:
+     */
+    fun init(): HashMap<String, String> {
+        val initials = HashMap<String, String>()
+        initials.put(Global.Key.ROOT_PACKAGE, basePackage)
+        initials.put(Global.Key.PACKAGE, fullPackage)
+        initials.put(Global.Key.DIRECTORY, fullPath)
+        return initials
     }
 }

@@ -1,13 +1,14 @@
 package app.isfaaghyth.utildroid;
 
 import app.isfaaghyth.utildroid.util.Global;
+import app.isfaaghyth.utildroid.util.Util;
 
 public class Main {
 
     public static void main(String[] args) {
         String option = "--fragment";
-        String packageName = "isfa.ganteng.banget";
-        String className = "ui.fragment.login";
+        String basePackage = "isfa.ganteng.banget";
+        String appPackage = "ui.fragment.login";
 
         switch (option) {
             case "--fragment":
@@ -18,7 +19,7 @@ public class Main {
                 break;
         }
 
-        new App(packageName, className)
+        new App(basePackage, appPackage)
                 .generate(option)
                 .mvp()
                 .layout();

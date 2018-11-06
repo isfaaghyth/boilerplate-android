@@ -5,30 +5,30 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 object Util {
-    val currentDir = System.getProperty(Global.System.DIR_PROPERTY)
 
-    fun getTimeNow(): String {
+    val currentPath: String = System.getProperty(Global.System.DIR_PROPERTY)
+
+    fun test() {
+        println("featurePackage -> ${"isfa.ganteng".substring(0, "isfa.ganteng".lastIndexOf("."))}")
+        println("featureIndexOf -> ${"isfa.ganteng".lastIndexOf(".")}")
+    }
+
+    fun timeNow(): String {
         val current = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
         return current.format(formatter)
     }
 
-    fun layoutName(fileName: String): String {
-        var tmpLayoutName = ""
-        for (name in fileName.split("(?<=[a-z])(?=[A-Z])".toRegex()).reversed()) {
-            tmpLayoutName += name.toLowerCase() + "_"
+    fun layoutName(file: String): String {
+        var layoutName = ""
+        for (name in file.split("(?<=[a-z])(?=[A-Z])".toRegex()).reversed()) {
+            layoutName += name.toLowerCase() + "_"
         }
-        return tmpLayoutName.substring(0, tmpLayoutName.length - 1)
+        return layoutName.substring(0, layoutName.length - 1)
     }
 
-    fun getTemplate(type: String): InputStream {
-        return javaClass.getResourceAsStream("/$type")
+    fun template(name: String): InputStream {
+        return javaClass.getResourceAsStream("/$name")
     }
 
-    fun projectPackage(packageName: String): String {
-        var projectLocation = ""
-        val packages = packageName.split(".")
-        for (domain in packages) projectLocation = "$projectLocation/$domain"
-        return projectLocation
-    }
 }

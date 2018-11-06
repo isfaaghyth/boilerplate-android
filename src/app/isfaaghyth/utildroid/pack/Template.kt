@@ -5,10 +5,10 @@ import app.isfaaghyth.utildroid.util.Global
 object Template {
 
     fun templateName(prefix: String): String = when (prefix) {
-        Global.Prefix.FRAGMENT -> "fragment.template"
-        Global.Prefix.PRESENTER -> "mvppresenter.template"
-        Global.Prefix.VIEW -> "mvpview.template"
-        Global.Prefix.ACTIVITY -> "activity.template"
+        Global.Prefix.FRAGMENT -> Global.Template.FRAGMENT
+        Global.Prefix.PRESENTER -> Global.Template.Mvp.Presenter
+        Global.Prefix.VIEW -> Global.Template.Mvp.View
+        Global.Prefix.ACTIVITY -> Global.Template.ACTIVITY
         else -> ""
     }
 

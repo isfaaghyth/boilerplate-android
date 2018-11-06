@@ -23,13 +23,13 @@ class Templating(packager: HashMap<String, String>,
     }
 
     private fun generator(templateFile: String): String {
-        var template = Util.getTemplate(templateFile).bufferedReader().use { it.readText() }
+        var template = Util.template(templateFile).bufferedReader().use { it.readText() }
 
         val replace = mapOf(
                 "~CLASS" to fileName,
                 "~ROOT_PACKAGE" to packageName,
                 "~PACKAGE" to fullPackage,
-                "~TIME" to Util.getTimeNow(),
+                "~TIME" to Util.timeNow(),
                 "~LAYOUT" to layoutName)
 
         replace.forEach { base, new ->
@@ -51,8 +51,8 @@ class Templating(packager: HashMap<String, String>,
     }
 
     fun layout(): Templating {
-        val layoutDirectory = Util.currentDir.plus(Global.Directory.ANDROID_RES)
-        val template = Util.getTemplate(Global.Template.LAYOUT).bufferedReader().use { it.readText() }
+        val layoutDirectory = Util.currentPath.plus(Global.Directory.ANDROID_RES)
+        val template = Util.template(Global.Template.LAYOUT).bufferedReader().use { it.readText() }
         val xmlFile = layoutDirectory.plus(layoutName).plus(Global.Ext.Xml)
         val layout = File(xmlFile)
         layout.writeText(template)
