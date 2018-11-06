@@ -88,7 +88,7 @@ class Initializer(private val basePackage: String,
     }
 
 
-    fun init(): Packager? {
+    fun pack(): Packager? {
         if (!valid()) return null
         return Packager(
                 basePackage = basePackage,

@@ -5,12 +5,8 @@ import app.isfaaghyth.utildroid.pack.Templating
 
 class App(basePackage: String, private val appPackage: String) {
 
-    private val initializer = Initializer(
-            basePackage = basePackage,
-            appPackage = appPackage.toLowerCase()
-    )
-
-    private val packager = initializer.init()
+    private val init = Initializer(basePackage, appPackage)
+    private val packager = init.pack()
 
     fun generate(classType: String, extension: String): Templating {
         return Templating(

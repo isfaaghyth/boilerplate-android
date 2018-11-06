@@ -201,7 +201,7 @@
     <delete dir="${utildroid.testoutput.dir}"/>
   </target>
   
-  <target name="init" description="Build initialization">
+  <target name="pack" description="Build initialization">
     <!-- Perform any build initialization in this target -->
   </target>
   
