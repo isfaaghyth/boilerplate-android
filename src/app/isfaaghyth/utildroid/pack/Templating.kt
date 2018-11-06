@@ -13,9 +13,14 @@ class Templating(packager: HashMap<String, String>,
     private val fullPackage = packager[Global.Key.PACKAGE].toString()
     private val projectDir  = packager[Global.Key.DIRECTORY].toString()
 
-    private val layoutName = Util.layoutName(fileName + prefix)
+    private var layoutName: String
 
-    init { fileName += prefix }
+    init {
+        val index = fileName.lastIndexOf(".")
+        fileName = fileName.substring(index + 1).capitalize()
+        layoutName = Util.layoutName(fileName + prefix)
+        fileName += prefix
+    }
 
     private fun generator(templateFile: String): String {
         var template = Util.getTemplate(templateFile).bufferedReader().use { it.readText() }

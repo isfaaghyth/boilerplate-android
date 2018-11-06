@@ -5,9 +5,9 @@ import app.isfaaghyth.utildroid.util.Global;
 public class Main {
 
     public static void main(String[] args) {
-        String option = args[0];
-        String packageName = args[1];
-        String className = args[2];
+        String option = "--fragment";
+        String packageName = "isfa.ganteng.banget";
+        String className = "ui.fragment.login";
 
         switch (option) {
             case "--fragment":

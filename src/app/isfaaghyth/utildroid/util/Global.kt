@@ -16,7 +16,7 @@ object Global {
         val TEMPLATE = "/template/"
 
         val ANDROID_PROJECT = "/app/src/main/java"
-        val ANDROID_RES = "/app/src/res/layout/"
+        val ANDROID_RES = "/app/src/main/res/layout/"
     }
     object Key {
         val ROOT_PACKAGE = "root_package"
