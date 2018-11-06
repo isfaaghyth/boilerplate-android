@@ -2,7 +2,6 @@ package app.isfaaghyth.utildroid
 
 import app.isfaaghyth.utildroid.pack.Initializer
 import app.isfaaghyth.utildroid.pack.Templating
-import app.isfaaghyth.utildroid.util.Global
 
 class App(basePackage: String, private val appPackage: String) {
 
@@ -15,7 +14,7 @@ class App(basePackage: String, private val appPackage: String) {
 
     fun generate(classType: String, extension: String): Templating {
         return Templating(
-                packager = packager,
+                packager = packager!!,
                 fileName = appPackage,
                 extension = extension,
                 prefix = classType)

@@ -1,6 +1,5 @@
 package app.isfaaghyth.utildroid.pack
 
-import app.isfaaghyth.utildroid.util.empty
 import app.isfaaghyth.utildroid.util.Global
 
 object Template {
@@ -10,7 +9,7 @@ object Template {
         Global.Prefix.PRESENTER -> Global.Template.Mvp.Presenter
         Global.Prefix.VIEW      -> Global.Template.Mvp.View
         Global.Prefix.ACTIVITY  -> Global.Template.ACTIVITY
-        else -> String().empty()
+        else -> ""
     }
 
 }

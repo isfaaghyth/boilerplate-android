@@ -1,17 +1,18 @@
 package app.isfaaghyth.utildroid.pack
 
+import app.isfaaghyth.utildroid.entity.Packager
 import app.isfaaghyth.utildroid.util.Global
 import app.isfaaghyth.utildroid.util.Util
 import java.io.File
 
-class Templating(packager: HashMap<String, String>,
+class Templating(private val packager: Packager,
                  private var fileName: String,
                  private var prefix: String,
                  private var extension: String) {
 
-    private val packageName = packager[Global.Key.ROOT_PACKAGE].toString()
-    private val fullPackage = packager[Global.Key.PACKAGE].toString()
-    private val projectDir  = packager[Global.Key.DIRECTORY].toString()
+    private val packageName = packager.basePackage
+    private val fullPackage = packager.featurePackage
+    private val projectDir  = packager.projectPath
 
     private var layoutName: String
 
@@ -67,4 +68,5 @@ class Templating(packager: HashMap<String, String>,
         create(File(mvpPresenter), Global.Template.Mvp.Presenter)
         return this
     }
+
 }

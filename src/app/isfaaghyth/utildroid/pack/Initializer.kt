@@ -43,6 +43,10 @@ class Initializer(private val basePackage: String,
     }
 
     init {
+        //change to lowercase for package's name standardization
+        basePackage.toLowerCase()
+        appPackage.toLowerCase()
+
         /**
          * featureBasePackage is preparing the sub-package for your class
          * @example: /ui/main/fragment/...

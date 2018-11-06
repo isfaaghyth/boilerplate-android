@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28aa9fd9-b98f-4b2e-9025-ffc435e1b86f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt" />
       <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="Initializer.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="-754">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -47,8 +49,8 @@
       <file leaf-file-name="Template.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,12 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <element signature="e#34#130#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,31 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtFunc.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Templating.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="299">
+              <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -176,16 +170,16 @@
         <option value="$PROJECT_DIR$/resources/fragment.template" />
         <option value="$PROJECT_DIR$/resources/mvppresenter.template" />
         <option value="$PROJECT_DIR$/resources/activity.template" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Global.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Package.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Packager.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.java" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt" />
       </list>
     </option>
   </component>
@@ -631,6 +625,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -639,51 +641,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="-754">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt">
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="299">
+          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="e#34#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
