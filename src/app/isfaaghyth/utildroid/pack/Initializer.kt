@@ -71,11 +71,11 @@ class Initializer(private val basePackage: String,
         val projectPath = File(fullPath)
         val layoutPath = File("$currentPath/${Global.Directory.ANDROID_RES}/")
         if (!layoutPath.exists()) {
-            //throw Exception("uh no! You entered the wrong package.")
+            //@TODO: throw Exception("uh no! You entered the wrong package.")
             layoutPath.mkdirs()
         }
         if (!projectPath.exists()) {
-            //throw Exception("uh no! You entered the wrong package.")
+            //@TODO: throw Exception("uh no! You entered the wrong package.")
             projectPath.mkdirs()
         }
     }

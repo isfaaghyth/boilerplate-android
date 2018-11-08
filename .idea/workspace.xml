@@ -7,11 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28aa9fd9-b98f-4b2e-9025-ffc435e1b86f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.kt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/Main.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/mvppresenter.template" afterPath="$PROJECT_DIR$/out/production/Utildroid/mvppresenter.template" />
-      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Generator$generator$1.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Generator$generator$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Generator.class" afterPath="$PROJECT_DIR$/out/production/Utildroid/app/isfaaghyth/utildroid/pack/Generator.class" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" />
+      <change beforePath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt" afterPath="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,78 +26,46 @@
     <favorites_list name="Utildroid" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Generator.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/fragment.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/activity.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvppresenter.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/mvppresenter.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/layout.template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Generator.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Util.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Mvp.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Mvp.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,16 +129,16 @@
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Package.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Packager.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.java" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Template.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Templating.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/App.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/res/ViewBinding.kt" />
-        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt" />
         <option value="$PROJECT_DIR$/resources/mvppresenter.template" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt" />
         <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.kt" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt" />
+        <option value="$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt" />
       </list>
     </option>
   </component>
@@ -272,7 +241,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39425287" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="kotlin" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/App.kt&#10;initi&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/pack/Initializer.kt&#10;m&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/Main.kt&#10;ma&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/Main.kt&#10;gl&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/util/Global.kt&#10;ini&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/pack/Initializer.kt&#10;in&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/pack/Initializer.kt&#10;main&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="ut&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/util/Util.kt&#10;ma&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/Main.kt&#10;app&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/App.kt&#10;initi&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/pack/Initializer.kt&#10;m&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/app/isfaaghyth/utildroid/Main.kt&#10;gl&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/util/Global.kt&#10;ini&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/pack/Initializer.kt&#10;in&#9;FILE&#9;file:///Users/isfaaghyth/Java/Utildroid/src/pack/Initializer.kt&#10;main&#9;null&#9;null" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -423,7 +392,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -433,12 +401,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.353125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.353125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3734375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3734375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28756058" sideWeight="0.4918415" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28756058" sideWeight="0.4918415" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -525,56 +493,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Packager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/ExtFunc.kt" />
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" />
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Jetpack.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Mvvm.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
-          <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/res/Layout.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Mvp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -622,14 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -682,10 +598,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Initializer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/entity/Packager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Jetpack.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Mvvm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/arch/Mvp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/pack/Generator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/isfaaghyth/utildroid/util/Util.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -17,10 +17,14 @@ class Generator(private val packager: Packager,
     private var layoutName: String
 
     init {
+        println("appPackage {p} -> $appPackage")
         val index = appPackage.lastIndexOf(".")
         appPackage = appPackage.substring(index + 1).capitalize()
+        println("appPackage {b} -> $appPackage")
         layoutName = Util.layoutName(appPackage + prefix)
+        println("layoutName -> $layoutName")
         appPackage += prefix
+        println("appPackage {a} -> $appPackage")
     }
 
     private fun generator(file: String): String {

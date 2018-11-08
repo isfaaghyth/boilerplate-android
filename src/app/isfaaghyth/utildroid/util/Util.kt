@@ -8,11 +8,6 @@ object Util {
 
     val currentPath: String = System.getProperty(Global.System.DIR_PROPERTY)
 
-    fun test() {
-        println("featurePackage -> ${"isfa.ganteng".substring(0, "isfa.ganteng".lastIndexOf("."))}")
-        println("featureIndexOf -> ${"isfa.ganteng".lastIndexOf(".")}")
-    }
-
     fun timeNow(): String {
         val current = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
