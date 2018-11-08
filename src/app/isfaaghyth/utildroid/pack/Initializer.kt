@@ -57,7 +57,11 @@ class Initializer(private val basePackage: String,
             fullPath = fullPath.plus("/").plus(appPackage)
         }
 
-        fullPath = "${basePath()}/$fullPath/$featurePackage/"
+        //.toLowerCase() for best-practice of package name
+        //fullPath = /location/your/project/
+        fullPath = "${basePath()}/$fullPath/${featurePackage.toLowerCase()}/"
+
+        //fullPackage = project.domain.name
         fullPackage = "$basePackage$fullPackage.$featurePackage"
 
         isDirectory()

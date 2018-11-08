@@ -14,17 +14,17 @@ class Generator(private val packager: Packager,
     private val fullPackage = packager.featurePackage
     private val projectDir  = packager.projectPath
 
+    private var className: String
     private var layoutName: String
 
     init {
-        println("appPackage {p} -> $appPackage")
-        val index = appPackage.lastIndexOf(".")
-        appPackage = appPackage.substring(index + 1).capitalize()
-        println("appPackage {b} -> $appPackage")
-        layoutName = Util.layoutName(appPackage + prefix)
+        println("appPackage -> $appPackage")
+        className = Util.toClassName(appPackage, prefix)
+        println("className -> $className")
+        layoutName = Util.toLayoutName(appPackage, prefix)
         println("layoutName -> $layoutName")
-        appPackage += prefix
-        println("appPackage {a} -> $appPackage")
+        appPackage = className
+        println("appPackage -> $appPackage")
     }
 
     private fun generator(file: String): String {

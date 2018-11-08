@@ -9,9 +9,9 @@ fun main(args: Array<String>) {
 class Main(args: Array<String>) {
 
     init {
-        var option = "--fragment"
+        var option = "--activity"
         val basePackage = "isfa.ganteng.banget"
-        val appPackage = "ui.fragment.login"
+        val appPackage = "ui.dialog.authAdmin"
 
         when (option) {
             "--fragment" -> option = Global.Prefix.FRAGMENT
