@@ -1,8 +1,6 @@
 package app.isfaaghyth.utildroid.util
 
 object Global {
-    val PACKAGE_NAME = "app.isfaaghyth.utildroid"
-
     object Prefix {
         val PRESENTER = "Presenter"
         val VIEW = "View"

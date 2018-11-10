@@ -6,7 +6,7 @@ import app.isfaaghyth.utildroid.util.Util
 import java.io.File
 
 class Generator(private val packager: Packager,
-                private var appPackage: String,
+                private var paramPackage: String,
                 private var prefix: String,
                 private var extension: String) {
 
@@ -14,18 +14,8 @@ class Generator(private val packager: Packager,
     private val fullPackage = packager.featurePackage
     private val projectDir  = packager.projectPath
 
-    private var className: String
-    private var layoutName: String
-
-    init {
-        println("appPackage -> $appPackage")
-        className = Util.toClassName(appPackage, prefix)
-        println("className -> $className")
-        layoutName = Util.toLayoutName(appPackage, prefix)
-        println("layoutName -> $layoutName")
-        appPackage = className
-        println("appPackage -> $appPackage")
-    }
+    private var className: String = Util.toClassName(paramPackage, prefix)
+    private var layoutName: String = Util.toLayoutName(paramPackage, prefix)
 
     private fun generator(file: String): String {
         var template = Util.template(file).bufferedReader().use {
@@ -33,7 +23,7 @@ class Generator(private val packager: Packager,
         }
 
         val replace = mapOf(
-                "~CLASS" to appPackage,
+                "~CLASS" to className,
                 "~ROOT_PACKAGE" to packageName,
                 "~PACKAGE" to fullPackage,
                 "~TIME" to Util.timeNow(),
@@ -63,15 +53,15 @@ class Generator(private val packager: Packager,
     }
 
     fun mvp(): Generator {
-        val mvpView = projectDir.plus(appPackage).plus(Global.Prefix.VIEW).plus(extension)
-        val mvpPresenter = projectDir.plus(appPackage).plus(Global.Prefix.PRESENTER).plus(extension)
+        val mvpView = projectDir.plus(className).plus(Global.Prefix.VIEW).plus(extension)
+        val mvpPresenter = projectDir.plus(className).plus(Global.Prefix.PRESENTER).plus(extension)
         create(File(mvpView), Global.Template.Mvp.View)
         create(File(mvpPresenter), Global.Template.Mvp.Presenter)
         return this
     }
 
     fun build(): Generator {
-        val newFile = File(projectDir.plus(appPackage).plus(extension))
+        val newFile = File(projectDir.plus(className).plus(extension))
         create(newFile, Template.name(prefix))
         return this
     }
